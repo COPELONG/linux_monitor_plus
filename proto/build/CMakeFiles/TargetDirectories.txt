@@ -1,0 +1,3 @@
+/work/proto/build/CMakeFiles/rebuild_cache.dir
+/work/proto/build/CMakeFiles/monitor_proto.dir
+/work/proto/build/CMakeFiles/edit_cache.dir

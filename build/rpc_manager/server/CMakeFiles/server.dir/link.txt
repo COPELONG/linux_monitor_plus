@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/server.dir/main.cpp.o  -o ../../../bin/server  -L/work/lib -Wl,-rpath,/work/lib ../../../lib/libmprpc.a -lprotobuf ../../../lib/libmonitor_proto.a ../../../lib/libmymuduo.a -lpthread -lzookeeper_mt 

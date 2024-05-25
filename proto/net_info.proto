@@ -1,0 +1,11 @@
+syntax = "proto3";
+package monitor.proto;
+option cc_generic_services = true;
+
+message NetInfo {
+    string name = 1;
+    float send_rate = 2;
+    float rcv_rate = 3;
+    float send_packets_rate = 4;
+    float rcv_packets_rate = 5;
+  }

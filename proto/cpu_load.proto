@@ -1,0 +1,8 @@
+syntax = "proto3";
+package monitor.proto;
+option cc_generic_services = true;
+message CpuLoad {
+    float load_avg_1 = 1;
+    float load_avg_3 = 2;
+    float load_avg_15 = 3;
+  }

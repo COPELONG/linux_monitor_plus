@@ -1,0 +1,7 @@
+# Hashes of file build rules.
+3ac093731c327eaca1c5d476220afa4a cpu_load.pb.h
+f1890cdb8b2db79697a0c398a691b4e9 cpu_softirq.pb.h
+40c755643cad0ea40a6256efcbf9176f cpu_stat.pb.h
+e28f8faad5abd18de4d8a7582b3a9c2b mem_info.pb.h
+3401e17dc0faacbf29521652cdd7a606 monitor_info.pb.h
+d4498360c9944c0cc8c689b7c3577950 net_info.pb.h
