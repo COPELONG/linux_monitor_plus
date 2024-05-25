@@ -53,13 +53,13 @@ C++、Protobuf、CMake、Docker、Zookeeper、RPC、Qt、Shell 脚本、网络�
 
 ## 监控展示
 
-![image-20240513173054192](D:\typora-image\image-20240513173054192.png)
+![image-20240513173054192](https://my-figures.oss-cn-beijing.aliyuncs.com/Figures/image-20240513173054192.png)
 
-![image-20240513173225219](D:\typora-image\image-20240513173225219.png)
+![image-20240513173225219](https://my-figures.oss-cn-beijing.aliyuncs.com/Figures/image-20240513173225219.png)
 
-![image-20240513173239839](D:\typora-image\image-20240513173239839.png)
+![image-20240513173239839](https://my-figures.oss-cn-beijing.aliyuncs.com/Figures/image-20240513173239839.png)
 
-![image-20240513173249706](D:\typora-image\image-20240513173249706.png)
+![image-20240513173249706](https://my-figures.oss-cn-beijing.aliyuncs.com/Figures/image-20240513173249706.png)
 
 ## 运行步骤
 
@@ -121,7 +121,7 @@ cd bin
 ./server -i test.conf
 ```
 
-![image-20240524170658018](D:\typora-image\image-20240524170658018.png)
+![image-20240524170658018](https://my-figures.oss-cn-beijing.aliyuncs.com/Figures/image-20240524170658018.png)
 
 ### 开启监控程序
 
@@ -136,7 +136,7 @@ cd bin
 ./monitor -i test.conf
 ```
 
-![image-20240524170710774](D:\typora-image\image-20240524170710774.png)
+![image-20240524170710774](https://my-figures.oss-cn-beijing.aliyuncs.com/Figures/image-20240524170710774.png)
 
 
 
@@ -155,7 +155,7 @@ cd bin
 ./display -i test.conf
 ```
 
-![image-20240524170724622](D:\typora-image\image-20240524170724622.png)
+![image-20240524170724622](https://my-figures.oss-cn-beijing.aliyuncs.com/Figures/image-20240524170724622.png)
 
 
 
