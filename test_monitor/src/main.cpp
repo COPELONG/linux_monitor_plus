@@ -47,6 +47,7 @@ int main(int argc, char **argv) {
       std::cout<<"start set"<<std::endl;
 
       stub.SetMonitorInfo(&controller, &monitor_info, &response, nullptr);
+      ////RpcChannel->RpcChannel::callMethod 集中来做所有rpc方法调用的参数序列化和网络发送
 
       if (controller.Failed())
       {
