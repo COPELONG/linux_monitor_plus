@@ -17,6 +17,7 @@ class CpuLoadMonitor : public MonitorInter {
   float load_avg_1_;
   float load_avg_3_;
   float load_avg_15_;
+  float cpu_nums;
 };
 
 }  // namespace monitor

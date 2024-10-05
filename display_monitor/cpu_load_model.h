@@ -4,7 +4,6 @@
 #include <vector>
 #include "monitor_inter.h"
 
-
 #include "monitor_info.pb.h"
 
 namespace monitor {
@@ -12,7 +11,11 @@ namespace monitor {
 class CpuLoadModel : public MonitorInterModel {
   Q_OBJECT
 
- public:
+public:
+  void Warnning(const monitor::proto::CpuLoad &cpu_load);
+  void stopSound(pid_t pid);
+  void playSound(pid_t &pid);
+
   explicit CpuLoadModel(QObject *parent = nullptr);
 
   virtual ~CpuLoadModel() {}
@@ -26,22 +29,21 @@ class CpuLoadModel : public MonitorInterModel {
 
   void UpdateMonitorInfo(const monitor::proto::MonitorInfo &monitor_info);
 
- signals:
+signals:
   void dataChanged(const QModelIndex &topLeft, const QModelIndex &bottomRight,
                    const QVector<int> &roles);
 
- private:
-  std::vector<QVariant> insert_one_cpu_load(
-      const monitor::proto::CpuLoad &cpu_load);
+private:
+  std::vector<QVariant>
+  insert_one_cpu_load(const monitor::proto::CpuLoad &cpu_load);
   std::vector<std::vector<QVariant>> monitor_data_;
   QStringList header_;
 
-  enum CpuLoad {
-    CPU_AVG_1 = 0,
-    CPU_AVG_3,
-    CPU_AVG_15,
-    COLUMN_MAX
-  };
+  enum CpuLoad { CPU_AVG_1 = 0, CPU_AVG_3, CPU_AVG_15, COLUMN_MAX };
+  float threshold = 1.5;
+  int cpu_nums;
+  pid_t soundProcessID = -1;
+  atomic<bool> is_send(true);
 };
 
-}  // namespace monitor
+} // namespace monitor

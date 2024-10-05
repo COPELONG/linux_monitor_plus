@@ -13,6 +13,7 @@ void CpuLoadMonitor::UpdateOnce(monitor::proto::MonitorInfo* monitor_info) {
   load_avg_1_ = std::stof(cpu_load[0]);
   load_avg_3_ = std::stof(cpu_load[1]);
   load_avg_15_ = std::stof(cpu_load[2]);
+  cpu_nums =  sysconf(_SC_NPROCESSORS_ONLN); //  TODO
 
   auto cpu_load_msg = monitor_info->mutable_cpu_load();
   cpu_load_msg->set_load_avg_1(load_avg_1_);
